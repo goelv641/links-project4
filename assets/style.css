@@ -1,4 +1,7 @@
-/* body { padding: 2em; }
+body { 
+	padding: 2em;
+	font-family: 'Orbitron', sans-serif;
+}
 
 a { color: blue; }
 em { font-style: italic; }
@@ -10,13 +13,10 @@ ul,
 figure {
 	display: grid;
 	gap: 1em;
-} */
+}
 
 /* h1 { font-family: Orbitron; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Orbitron; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Orbitron; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Orbitron; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Orbitron; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; } */
 
-.body {
-	font-family: 'Orbitron', sans-serif;
-}
 
 .image-block {
 	display: grid;
