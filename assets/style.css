@@ -12,7 +12,37 @@ figure {
 	gap: 1em;
 }
 
-.image-blocks {
+.image-block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.channel-owner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.channel-collaborator {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.audio-embed-block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.link-block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.pdf-block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.video-embed-block {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
