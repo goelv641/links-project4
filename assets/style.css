@@ -1,9 +1,16 @@
 body { 
 	padding: 2em;
 	font-family: 'Orbitron', sans-serif;
+	color: whitesmoke;
+	background-color: #1D1D1D;
 }
 
-a { color: blue; }
+h1 {
+	font-size: 22px;
+	font-weight: 800;
+}
+
+a { color: rgb(183, 255, 0); }
 em { font-style: italic; }
 strong { font-weight: bold; }
 
