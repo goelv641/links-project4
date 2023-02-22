@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="assets/arena.js"></script>
+    <link href="assets/reset.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
+	<script defer src="assets/arena.js"></script>
+	<script defer src="assets/main.js"></script>
     <title>Project 4: Links</title>
 </head>
 <body>
@@ -14,12 +17,20 @@
     </header>
     <main>
         <section class="channel-description"></section>
+        <ul class="channel-owner channel-collaborator"></ul>
         <ul class="image-blocks"></ul>
     </main>
     <template id="image-block">
-        <div>
-            <img class="image-thumb">
-        </div>
+        <li>
+            <img class="image-thumb my-own-class">
+        </li>
     </template>
+    <section>
+        <h2 class="channel-count"></h2> <!-- How many blocks. -->
+        <!-- All the channel “blocks” will be created as children, here. -->
+        <!-- You could move the classes to different section elements to separate the types! -->
+        <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+        </ul>
+    </section>
 </body>
 </html>
