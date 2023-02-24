@@ -1,4 +1,5 @@
-// The Description is returned as Markdown, of course.
+
+//The Description is returned as Markdown, of course.
 let markdownIt = document.createElement('script')
 markdownIt.src = 'https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.3.2/markdown-it.min.js'
 document.head.appendChild(markdownIt)
@@ -6,6 +7,7 @@ document.head.appendChild(markdownIt)
 
 
 const setBasics = (data) => {
+	
 	document.title = data.title
 
 	const channelTitle = document.querySelectorAll('.channel-title')
@@ -44,6 +46,7 @@ const setBasics = (data) => {
 			elements.link.forEach((element) => user.slug ? element.href = `https://www.are.na/${user.slug}` : element.remove())
 
 			container.appendChild(template)
+			container.classList.add("content")
 		})
 	}
 
@@ -210,6 +213,8 @@ const renderBlock = (block, type) => {
 		elements.timeCreated.forEach((element) => element.innerHTML = `Created ${showRelativeDate(block.created_at)}`)
 
 		container.append(template)
+		container.classList.add("content")
+		
 	})
 }
 
