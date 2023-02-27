@@ -15,7 +15,8 @@ const setBasics = (data) => {
 	const channelCount = document.querySelectorAll('.channel-count')
 
 	channelTitle.forEach((element) => element.innerHTML = data.title)
-	channelDescription.forEach((element) => element.innerHTML = window.markdownit().render(data.metadata.description))
+	// channelDescription.forEach((element) => element.innerHTML = window.markdownit().render(data.metadata.description))
+	channelDescription.forEach((element) => element.innerHTML = (data.metadata.description))
 	channelCount.forEach((element) => element.innerHTML = `${data.length} blocks`)
 
 	const renderUser = (user, id) => {
@@ -190,7 +191,7 @@ const renderBlock = (block, type) => {
 		elements.imageSquare.forEach((element) => block.image ? srcOrSrcset(element, 'square') : element.remove())
 		elements.imageDisplay.forEach((element) => block.image ? srcOrSrcset(element, 'display') : element.remove())
 		elements.image.forEach((element) => block.image ? srcOrSrcset(element, 'large') : element.remove())
-		elements.embed.forEach((element) => block.embed ? element.innerHTML = block.embed.html : element.remove())
+		// elements.embed.forEach((element) => block.embed ? element.innerHTML = block.embed.html : element.remove())
 		elements.audio.forEach((element) => block.attachment ? element.src = block.attachment.url : element.remove())
 		elements.video.forEach((element) => block.attachment ? element.src = block.attachment.url : element.remove())
 		elements.link.forEach((element) => {
