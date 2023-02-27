@@ -41,14 +41,14 @@ template {
 	width: 33%;
 }
 
-.image-block {
+/* .image-block { */
 	/* display: flex;
 	flex-direction: column;
 	position: relative;
 	background-color: aliceblue; */
 	/* display: grid;
 	grid-template-columns: repeat(4, 1fr); */
-}
+/* } */
 
 /* .channel-owner {
 	display: grid;
