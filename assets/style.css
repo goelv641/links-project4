@@ -6,7 +6,7 @@ body {
 	padding: 3vw;
 	font-family: 'Orbitron', sans-serif;
 	color: whitesmoke;
-	background-color: #404040;
+	background-color: #1a1a1a;
 	
 }
 
@@ -51,7 +51,11 @@ border: 1px solid red;
 
 .content li figure picture {
 	width: 100%;
-	border: 1px solid rgb(8, 0, 255);		
+	border: 1px solid rgb(8, 0, 255);	
+	background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+	border-radius: 50%;	
+	transition: background-color 1s;
+	
 	/* this is the issue with grid and image sizing */
 	}
 
@@ -61,6 +65,10 @@ border: 1px solid red;
 	aspect-ratio: 1/1;
 	object-fit: cover;
 	border-radius: 50%;
+	mix-blend-mode: overlay;
+	/* opacity: 30%; */
+	-webkit-box-shadow: 0 0 99px rgba(0, 0, 0, 1)  ; 
+	-moz-box-shadow: 0 0 99px rgba(0, 0, 0, 1)  ; 
 }
 
 template {
@@ -68,9 +76,14 @@ template {
 }
 
 .content li figure picture img:hover {
-	opacity: 70%;
+	/* opacity: 30%; */
+	mix-blend-mode: overlay;
 }
 
+.content li figure picture:hover, .content li figure picture:focus {
+	background-color: #e91e63;
+	color: #fff;
+  }
 
 @media only screen and (max-width: 600px) {
 		.content {
