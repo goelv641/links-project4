@@ -40,7 +40,7 @@ figure {
 	/* background-color: aqua; */
 	width: 25%;
 	padding: 4em;
-	padding-bottom: 100px;
+	/* padding-bottom: 20px; */
 }
 
 .content li figure {
@@ -88,7 +88,7 @@ template {
 
 h1 {
 	/* display: flex; */
-	font-size: 100px;
+	font-size: 70px;
 	/* align-content: center; */
 }
 
@@ -97,20 +97,32 @@ h1 {
 }
 
 .channel-description {
-	font-size: 30px;
+	font-size: 26px;
 	padding-top: 20px;
 	padding-bottom: 100px;
+	width: 45vw;
 }
 
-.channel-owner {
+
+/* .channel-owner {
 	display: none;
 }
 
 .channel-collaborator {
 	display: none;
+} */
+
+/* .popup {
+	Z-index: 100;
 }
 
-
+.popup1 {
+	width: 80vw;
+	height: 80vh;
+	Z-index: 100;
+	background-color: white;
+	margin: auto;
+} */
 
 .title {
 	color: #3cff97;
@@ -154,13 +166,48 @@ display: none;
 	display: none;
 }
 
+.linkname {
+	display: block;
+	/* padding-left: -20px; */
+}
 
+.avatar {
+	display: none;
+}
 
+/* .channel-owner li {
+padding: 20px;
+} */
+
+.channel-count {
+	/* font-size: 10px;
+	color: grey;
+	padding-top: -10% !important; */
+	display: none;
+}
+
+.one {
+	width: 10% !important;
+	padding-top: 0% !important;
+	margin-top: -2% !important;
+	margin-left: -2.7% !important;
+	color: grey;
+	
+}
 
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) { 
 		
+	/* body { 
+		box-sizing: border-box;
+		padding: 3vw;
+		font-family: 'Orbitron', sans-serif;
+		color: whitesmoke;
+		background-color: #161616;
+	
+	} */
+
 	.content {
 			display: block;
 		}
@@ -169,40 +216,41 @@ display: none;
 			/* background-color: aqua; */
 			width: 100%;
 			padding: 3em;
-			padding-bottom: 20px;
+			/* padding-bottom: 20px; */
 		}
 
 		.content li figure {
 			width: 100%;
 		}
 
-		.channel-owner {
+		/* .channel-owner {
 			display: none;
 		}
 		
 		.channel-collaborator {
 			display: none;
-		}
+		} */
 
+		/* .channel-count {
+			display: none;
+		} */
 
 		h1 {
-			/* display: flex; */
 			font-size: 40px;
-			/* width: 100vw; */
-			/* align-content: center; */
+			/* padding: 20px; */
 		}
 		
 		.channel-url {
-			padding-bottom: 40px;
-			font-size: 20px;
+		display: none;
 		}
 		
 		.channel-description {
 			font-size: 18px;
 			padding-top: 20px;
 			line-height: 24px;
-			padding-bottom: 20px;
-			width: 100vw;
+			/* padding: 20px; */
+			width: 90vw;
+			padding-bottom: 20% !important;
 		}
 		
 		.channel-owner {
@@ -213,6 +261,10 @@ display: none;
 			display: none;
 		}
 		
+		.linkname {
+			display: block;
+			/* padding-left: -20px; */
+		}
 		
 		
 		.title {
@@ -257,17 +309,11 @@ display: none;
 			display: none;
 		}
 
+		.channel-description {
+			padding-bottom: 30%;
+		}
 
 	}
-
-
-
-
-
-
-
-
-
 
 
 /* .image-block { */
