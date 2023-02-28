@@ -1,13 +1,14 @@
-*{
+/* *{
 	border: 1px solid red;
-}
+} */
+
 body { 
 	box-sizing: border-box;
 	padding: 3vw;
 	font-family: 'Orbitron', sans-serif;
 	color: whitesmoke;
-	background-color: #1a1a1a;
-	
+	background-color: #161616;
+
 }
 
 h1 {
@@ -34,29 +35,27 @@ figure {
 	width: 94vw;
 	/* grid-template-columns: repeat(4, 1fr); */
 	flex-wrap: wrap;
-
 }
 .content li {
 	/* background-color: aqua; */
-
 	width: 25%;
-	padding: 3em;
+	padding: 4em;
+	padding-bottom: 100px;
 }
 
 .content li figure {
 width: 100%;
-border: 1px solid red;
-
+/* border: 1px solid red; */
 }
 
 .content li figure picture {
 	width: 100%;
-	border: 1px solid rgb(8, 0, 255);	
+	border: 5px solid rgb(21, 21, 60);	
 	background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
 	border-radius: 50%;	
 	transition: background-color 1s;
-	
 	/* this is the issue with grid and image sizing */
+	box-shadow: 0 0px 100px rgb(0 0 0 / 100%);
 	}
 
 .content li figure picture img {
@@ -67,8 +66,8 @@ border: 1px solid red;
 	border-radius: 50%;
 	mix-blend-mode: overlay;
 	/* opacity: 30%; */
-	-webkit-box-shadow: 0 0 99px rgba(0, 0, 0, 1)  ; 
-	-moz-box-shadow: 0 0 99px rgba(0, 0, 0, 1)  ; 
+	/* -webkit-box-shadow: 0 0 99px rgba(0, 0, 0, 1)  ; 
+	-moz-box-shadow: 0 0 99px rgba(0, 0, 0, 1)  ;  */
 }
 
 template {
@@ -85,24 +84,187 @@ template {
 	color: #fff;
   }
 
-@media only screen and (max-width: 600px) {
-		.content {
+
+
+h1 {
+	/* display: flex; */
+	font-size: 100px;
+	/* align-content: center; */
+}
+
+.channel-url {
+	padding-bottom: 40px;
+}
+
+.channel-description {
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+
+.channel-owner {
+	display: none;
+}
+
+.channel-collaborator {
+	display: none;
+}
+
+
+
+.title {
+	color: #3cff97;
+	font-size: 40px;
+	/* font-weight: 500; */
+	margin-bottom: 40px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+}
+
+.time-updated {
+	display: none;
+	/* margin-top: 20px;
+	font-size: 10px;
+	color: grey; */
+}
+
+.time-created {
+	display: none;
+	/* font-size: 10px;
+	color: grey; */
+}
+
+.description {
+display: none;
+	/* color: rgb(164, 196, 196);
+	padding-top: 20px;
+	font-size: 18px;
+	line-height: 27px; */
+}
+
+.type {
+	display: none;
+	/* font-size: 10px;
+	color: grey; */
+}
+
+.link {
+	display: none;
+}
+
+
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) { 
+		
+	.content {
 			display: block;
 		}
 
 		.content li {
 			/* background-color: aqua; */
-		
 			width: 100%;
-			/* padding: 3em; */
+			padding: 3em;
+			padding-bottom: 20px;
 		}
 
 		.content li figure {
-width: 100%;
-		
+			width: 100%;
+		}
 
-}
+		.channel-owner {
+			display: none;
+		}
+		
+		.channel-collaborator {
+			display: none;
+		}
+
+
+		h1 {
+			/* display: flex; */
+			font-size: 40px;
+			/* width: 100vw; */
+			/* align-content: center; */
+		}
+		
+		.channel-url {
+			padding-bottom: 40px;
+			font-size: 20px;
+		}
+		
+		.channel-description {
+			font-size: 18px;
+			padding-top: 20px;
+			line-height: 24px;
+			padding-bottom: 20px;
+			width: 100vw;
+		}
+		
+		.channel-owner {
+			display: none;
+		}
+		
+		.channel-collaborator {
+			display: none;
+		}
+		
+		
+		
+		.title {
+			color: #3cff97;
+			font-size: 24px;
+			/* font-weight: 500; */
+			margin-bottom: 20px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			text-transform: uppercase;
+		}
+		
+		.time-updated {
+			display: none;
+			/* margin-top: 20px;
+			font-size: 10px;
+			color: grey; */
+		}
+		
+		.time-created {
+			display: none;
+			/* font-size: 10px;
+			color: grey; */
+		}
+		
+		.description {
+		display: none;
+			/* color: rgb(164, 196, 196);
+			padding-top: 20px;
+			font-size: 18px;
+			line-height: 27px; */
+		}
+		
+		.type {
+			display: none;
+			/* font-size: 10px;
+			color: grey; */
+		}
+		
+		.link {
+			display: none;
+		}
+
+
 	}
+
+
+
+
+
+
 
 
 
