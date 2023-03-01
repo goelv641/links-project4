@@ -6,4 +6,4 @@ window.arenaCallback = () => {
 
 // function openPopUp() {
 // 	document.getElementById("popup1").style.display = "block";
-//   }
+//    }
