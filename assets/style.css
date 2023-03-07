@@ -90,15 +90,29 @@ template {
 }
 
 .content li figure picture:hover, .content li figure picture:focus {
+
 	background-color: #e404ff;
 	color: #fff;
   }
+
 
 h1 {
 	/* display: flex; */
 	font-size: 70px;
 	font-weight: 900;
 	/* align-content: center; */
+}
+
+.title {
+	/* color: #5bc8af; */
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
 }
 
 .channel-url {
@@ -117,17 +131,12 @@ h1 {
 	/* word-spacing: 1px; */
 }
 
-.title {
-	/* color: #5bc8af; */
-	font-size: 30px;
-	font-weight: 600;
-	margin-bottom: 40px;
-	margin-top: 20px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	text-transform: uppercase;
-}
+.full-name {
+	margin-left: 1% !important;
+	background-color: #3cff97;
+	}
+
+
 
 .time-updated {
 	display: none;
