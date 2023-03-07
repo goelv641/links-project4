@@ -9,7 +9,10 @@
 	<link href="assets/style.css" rel="stylesheet">
 	<script defer src="assets/arena.js"></script>
 	<script defer src="assets/main.js"></script>
-    <link href="https://fonts.cdnfonts.com/css/orbitron-2" rel="stylesheet">
+    <!-- <link href="https://fonts.cdnfonts.com/css/orbitron-2" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
     <title>Project 4: Links</title>
 </head>
 
@@ -34,9 +37,9 @@
             </li>
         </template>
         <template id="channel-collaborator">
-            <li class="one">Collaborator</li>
+            <li class="one">COLLABORATOR</li>
             <li class="one">
-                <!-- <img class="avatar"> -->
+                <img class="avatar">
                 <a class="linkname">
                     <p class="full-name"></p>
                 </a>
@@ -60,13 +63,14 @@
     <template id="audio-embed-block">
         <li>
             <figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
-                <h3 class="title"></h3> <!-- Block title inserts here. -->
+                
                 <picture>
                     <source class="image-thumb"> <!-- You will have to add the `media` if you want to use these. -->
                     <source class="image-square">
                     <source class="image-display">
                     <img class="image"> <!-- Largest image/cover source inserts here. -->
                 </picture>
+                <h3 class="title"></h3> <!-- Block title inserts here. -->
                 <div class="embed"></div> <!-- Embed iframe inserts here. -->
                 <a class="link"> <!-- Original URL inserts here. -->
                     <p class="link-title"></p> <!-- Link title inserts here. -->
@@ -100,7 +104,7 @@
     </template>
     <template id="link-block">
         <li>
-            <h3 class="title"></h3>
+           
             <figure class="link-block">
                 
                 <picture>
@@ -109,6 +113,7 @@
                     <source class="image-display">
                     <img class="image">
                 </picture>
+                <h3 class="title"></h3>
                 <a class="link">
                     <p class="link-title"></p>
                 </a>
@@ -122,13 +127,14 @@
     <template id="pdf-block">
         <li>
             <figure class="pdf-block">
-                <h3 class="title"></h3>
+                
                 <picture>
                     <source class="image-thumb">
                     <source class="image-square">
                     <source class="image-display">
                     <img class="image">
                 </picture>
+                <h3 class="title"></h3>
                 <a class="link"> <!-- PDF link inserts here. -->
                     <p class="link-title"></p> <!-- Repeats the block title. -->
                 </a>
@@ -142,13 +148,14 @@
     <template id="video-embed-block">
         <li>
             <figure class="video-embed-block">
-                <h3 class="title"></h3>
+                
                 <picture>
                     <source class="image-thumb">
                     <source class="image-square">
                     <source class="image-display">
                     <img class="image">
                 </picture>
+                <h3 class="title"></h3>
                 <div class="embed"></div>
                 <a class="link">
                     <p class="link-title"></p>
@@ -164,9 +171,12 @@
 </section>
 
 <section class="popup">
-
+<button id="close">✕</button>
 <a id="popup-title">title</a>
 <p id="popup-description">“My desire is to set up a situation to which I take you and let you see. It becomes your experience. I make things that take you up into the sky. But it's not about the landforms. I'm working to bring celestial objects like the sun and moon into the spaces that we inhabit. I apprehend light - I make events that shape or contain light.”</p>
+<img id="popup-image">
+<!-- <iframe id="popup-video"></ifr>
+<audio id="popup-audio"></audio> -->
 
 </section>
 
