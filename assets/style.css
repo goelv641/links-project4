@@ -131,10 +131,13 @@ h1 {
 	/* word-spacing: 1px; */
 }
 
-.full-name {
-	margin-left: 1% !important;
+/* .full-name {
+	padding-left: 1% !important;
 	background-color: #3cff97;
-	}
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	position: relative;
+	} */
 
 
 
@@ -191,7 +194,7 @@ h1 {
 }
 
 .one {
-	width: 10% !important;
+	width: 10vw !important;
 	padding: 0% !important;
 	margin-top: -3% !important;
 	/* margin-left: -2.7% !important; */
