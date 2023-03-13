@@ -179,6 +179,7 @@ h1 {
 
 .linkname {
 	display: block;
+	margin-bottom: 100px;
 	/* padding-left: -20px;
 	background-color: #3cff97; */
 }
@@ -258,6 +259,34 @@ h1 {
 	/* IMAGE POP_UPS ARE NOT WOKRING */
 }
 
+#popup-time-updated {
+	margin: 0%;
+	padding: 0%;
+}
+
+/* #popup-time-created {
+	font-size: 12px;
+	color: #53ddaf;
+	margin-top: -40px;
+	text-transform: uppercase;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	
+	margin: 0%;
+	padding: 0%;
+} */
+
+.time {
+	font-size: 12px;
+	color: #53ddaf;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	float: left;
+	margin-top: 20px;
+}
+
 #filter {
 	float: right ;
 	display: flex;
@@ -271,6 +300,7 @@ h1 {
 	line-height: 2;
 	position: fixed;
 	color: #e404ff;
+	font-style: italic;
 }
 
 

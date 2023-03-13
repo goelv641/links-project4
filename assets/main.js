@@ -15,11 +15,14 @@ window.arenaCallback = () => {
 				let description=element.querySelector(".description")
 				let linkurl=element.querySelector(".link")
 				let image=element.querySelector(".image-display")
+				let created=element.querySelector(".time-created")
+				let updated=element.querySelector(".time-updated")
+				// let title=element.querySelector(".filetype")
 				if(fig.className=="video-embed-block"){
 					document.querySelector("#popup-video").srcset = linkurl.href;
 				}
 				console.log(element)
-				openPopUp(title.innerHTML,description.innerHTML,linkurl.href,image.srcset)
+				openPopUp(title.innerHTML,description.innerHTML,linkurl.href,image.srcset,created.innerHTML,updated.innerHTML)
 			}
 			
 		})
@@ -100,12 +103,15 @@ window.arenaCallback = () => {
 
 }
 
-function openPopUp(popuptitle,popupdescription,url,srcset) {
+function openPopUp(popuptitle,popupdescription,url,srcset,popuptimeupdated,popuptimecreated) {
 	document.querySelector(".popup").style.display = "block";
 	document.querySelector("#popup-title").innerHTML = popuptitle;
 	document.querySelector("#popup-description").innerHTML = popupdescription;
 	if(url)document.querySelector("#popup-title").href = url;
 	document.querySelector("#popup-image").srcset = srcset;
+	document.querySelector("#popup-time-updated").innerHTML = popuptimeupdated;
+	document.querySelector("#popup-time-created").innerHTML = popuptimecreated;
+	// document.querySelector("#popup-filetype").innerHTML = popupfiletype;
    }
 
    document.querySelector("#close").addEventListener("click",function(){
