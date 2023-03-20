@@ -228,6 +228,7 @@ h1 {
 	padding-top: 100px;
 	flex-direction: column;
 	margin-bottom: 40px;
+	overflow-wrap: break-word;
 }
 
 #popup-description {

@@ -14,15 +14,22 @@ window.arenaCallback = () => {
 				let title=element.querySelector(".title")
 				let description=element.querySelector(".description")
 				let linkurl=element.querySelector(".link")
-				let image=element.querySelector(".image-display")
+				let image=element.querySelector(".image")
 				let created=element.querySelector(".time-created")
 				let updated=element.querySelector(".time-updated")
 				// let title=element.querySelector(".filetype")
-				if(fig.className=="video-embed-block"){
-					document.querySelector("#popup-video").srcset = linkurl.href;
-				}
+				// if(fig.className=="video-embed-block"){
+				// 	document.querySelector("#popup-video").srcset = linkurl.href;
+				// }
 				console.log(element)
-				openPopUp(title.innerHTML,description.innerHTML,linkurl.href,image.srcset,created.innerHTML,updated.innerHTML)
+				if(linkurl){
+					console.log(title.innerHTML,description.innerHTML,image.src,created.innerHTML,updated.innerHTML)
+					openPopUp(title.innerHTML,description.innerHTML,linkurl.href,image.src,created.innerHTML,updated.innerHTML)
+				}
+				else{
+					console.log(title.innerHTML,description.innerHTML,image.src,created.innerHTML,updated.innerHTML)
+					openPopUp(title.innerHTML,description.innerHTML,null,image.src,created.innerHTML,updated.innerHTML)
+				}
 			}
 			
 		})
@@ -103,14 +110,14 @@ window.arenaCallback = () => {
 
 }
 
-function openPopUp(popuptitle,popupdescription,url,srcset,popuptimeupdated,popuptimecreated) {
+function openPopUp(popuptitle,popupdescription,popupurl,popupimage,popuptimeupdated,popuptimecreated) {
 	document.querySelector(".popup").style.display = "block";
-	document.querySelector("#popup-title").innerHTML = popuptitle;
-	document.querySelector("#popup-description").innerHTML = popupdescription;
-	if(url)document.querySelector("#popup-title").href = url;
-	document.querySelector("#popup-image").srcset = srcset;
-	document.querySelector("#popup-time-updated").innerHTML = popuptimeupdated;
-	document.querySelector("#popup-time-created").innerHTML = popuptimecreated;
+	if(popuptitle)document.querySelector("#popup-title").innerHTML = popuptitle;
+	if(popupdescription)document.querySelector("#popup-description").innerHTML = popupdescription;
+	if(popupurl)document.querySelector("#popup-title").href = popupurl;
+	if(popupimage)document.querySelector("#popup-image").src = popupimage;
+	if(popuptimeupdated)document.querySelector("#popup-time-updated").innerHTML = popuptimeupdated;
+	if(popuptimecreated)document.querySelector("#popup-time-created").innerHTML = popuptimecreated;
 	// document.querySelector("#popup-filetype").innerHTML = popupfiletype;
    }
 
